@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 控件左上角、左下角是圆边的 -->
+    <item android:state_pressed="true"><shape>
+            <solid android:color="#00E3E2" />
+
+            <corners android:bottomLeftRadius="25dp" android:topLeftRadius="25dp" />
+
+            <stroke android:dashGap="0dp" android:width="2dp" android:color="#FF0000" />
+        </shape></item>
+    <item android:state_focused="true"><shape>
+            <solid android:color="@color/blue" />
+
+            <corners android:bottomLeftRadius="25dp" android:topLeftRadius="25dp" />
+
+            <stroke android:dashGap="0dp" android:width="2dp" android:color="#FF0000" />
+        </shape></item>
+    <item><shape>
+            <solid android:color="@color/blue" />
+
+            <corners android:bottomLeftRadius="25dp" android:topLeftRadius="25dp" />
+
+            <stroke android:dashGap="0dp" android:width="2dp" android:color="#FF0000" />
+        </shape></item>
+
+</selector>

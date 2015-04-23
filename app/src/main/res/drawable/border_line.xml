@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 控件边框线 -->
+
+    <solid android:color="#7f000000" />
+
+    <corners android:radius="6dp" />
+
+    <padding android:top="1dp" />
+
+</shape>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不好用，如果在一个xml里2个按钮可以取android:id="@id/ok" 不会报错，他们会重合 -->
+    <item type="id" name="ok"/>
+    <item type="id" name="cancel"/>
+    <item type="id" name="back"/>
+    <item type="id" name="next"/>
+</resources>

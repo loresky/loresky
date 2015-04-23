@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.loresky.zoom" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".test.fragment.CrimeActivity"/>
+        <activity android:name=".test.fragment.CrimeListActivity"/>
+        <activity android:name=".test.dialogfragment.MyDialogFragment"/>
+        <activity android:name=".test.asynctask.DownAsyncActivity"/>
+        <activity android:name=".test.httpclient.HttpGetActivity"/>
+        <activity android:name=".test.httpclient.HttpPostAcitvity"/>
+        <activity android:name=".test.broadcastReceiver.RececiverActivity"/>
+        <activity android:name=".daoexample.GeenDaoActivity"/>
+        <activity android:name=".test.volley.VolleyActivity"/>
+        <activity android:name=".test.notification.NotificationActivity"/>
+        <activity android:name=".test.iconfont.IconFontActivity"/>
+    </application>
+
+</manifest>
