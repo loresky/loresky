@@ -5,16 +5,42 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.loresky.zoom.common.BaseActivity;
+import com.loresky.zoom.daoexample.GeenDaoActivity;
+import com.loresky.zoom.test.asynctask.DownAsyncActivity;
+import com.loresky.zoom.test.broadcastReceiver.RececiverActivity;
+import com.loresky.zoom.test.dialogfragment.MyDialogFragment;
+import com.loresky.zoom.test.fragment.CrimeActivity;
+import com.loresky.zoom.test.fragment.CrimeListActivity;
+import com.loresky.zoom.test.httpclient.HttpGetActivity;
+import com.loresky.zoom.test.httpclient.HttpPostAcitvity;
+import com.loresky.zoom.test.iconfont.IconFontActivity;
+import com.loresky.zoom.test.notification.NotificationActivity;
+import com.loresky.zoom.test.volley.VolleyActivity;
 import com.loresky.zoom.util.DebugLog;
-
-import java.util.List;
 
 public class MainActivity extends BaseActivity implements OnItemClickListener {
     private ListView mListView;
-    private List<String> mList;
+
+    private Class[] mClass = new Class[]
+            {CrimeActivity.class, CrimeListActivity.class,
+                    MyDialogFragment.class, DownAsyncActivity.class,
+                    HttpGetActivity.class, HttpPostAcitvity.class,
+                    RececiverActivity.class, GeenDaoActivity.class,
+                    VolleyActivity.class, NotificationActivity.class,
+                    IconFontActivity.class};
+
+    private String[] mName = new String[]{
+            "fragment", "listFragment",
+            "dialogFragment, asyncTask",
+            "httpGet", "httpPost",
+            "RececiverActivity", "GeenDao",
+            "Volley", "Notification",
+            "inco font"
+    };
 
     @Override
     public void loadContentView() {
@@ -28,15 +54,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
 
     @Override
     public void initData() {
-//        mList = new ArrayList<String>();
-//
-//        String dirs[] = getResources().getStringArray(R.array.dri);
-//        for (String s : dirs) {
-//            mList.add(s);
-//        }
-//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mList);
-//
-//        mListView.setAdapter(adapter);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, mName);
+        mListView.setAdapter(adapter);
     }
 
     @Override
@@ -65,44 +84,6 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         DebugLog.i("id:" + position);
-//        Class classFlag = null;
-//        switch (position) {
-//            case 0:
-//                classFlag = CrimeActivity.class;
-//                break;
-//            case 1:
-//                classFlag = CrimeListActivity.class;
-//                break;
-//            case 2:
-//                classFlag = MyDialogFragment.class;
-//                break;
-//            case 3:
-//                classFlag = DownAsyncActivity.class;
-//                break;
-//            case 4:
-//                classFlag = HttpGetActivity.class;
-//                break;
-//            case 5:
-//                classFlag = HttpPostAcitvity.class;
-//                break;
-//            case 6:
-//                classFlag = RececiverActivity.class;
-//                break;
-//            case 7:
-//                classFlag = GeenDaoActivity.class;
-//                break;
-//            case 8:
-//                classFlag = VolleyActivity.class;
-//                break;
-//            case 9:
-//                classFlag =NotificationActivity.class;
-//                break;
-//            case 10:
-//                classFlag=IconFontActivity.class;
-//                break;
-//            default:
-//                break;
-//        }
-//        startActivity(new Intent(this, classFlag));
+        startActivity(new Intent(this, mClass[position]));
     }
 }

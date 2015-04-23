@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="white">#FFFFFF</color>
-	<color name="black">#000000</color>
-	<color name="gray">#808080</color>
-	<color name="red">#FF0000</color>
-	<color name="gold">#FFD700</color>
-	<color name="yellow">#FFFF00</color>
-	<color name="green">#008000</color>
-	<color name="blue">#0000FF</color>
-	<color name="purple">#800080</color>
-	<color name="pink">#FFC0CB</color>
-	<color name="orange">#FFA500</color>
-	<color name="lemonyellow">#FFFACD</color>
-	<color name="graywhite">#F5F5F5</color>
-	<color name="grayslate">#708090</color>
-	<color name="lightblue">#0083FF</color>
-	
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="lemonyellow">#FFFACD</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="grayslate">#708090</color>
+    <color name="lightblue">#0083FF</color>
+
+
+    <!-- 主题1颜色 -->
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#F57C00</color>
+    <color name="colorPrimaryLight">#FFE0B2</color>
+    <!-- accent color: red -->
+    <color name="colorAccent">#FF5252</color>
+    <!-- text color: white -->
+    <color name="textColorPrimary">#FFFACD</color>
+    <color name="textColorSecondary">#9E9E9E</color>
+    <!-- inverse text color: 87% black -->
+    <color name="textColorPrimaryInverse">#DE000000</color>
+    <color name="textColorSecondaryInverse">#9E9E9E</color>
+    <!-- 主题2颜色 -->
+    <color name="colorPrimaryInverse">#FFC0CB</color>
+    <color name="colorPrimaryDarkInverse">#FFD700</color>
+    <color name="colorAccentInverse">#0083FF</color>
 </resources>
