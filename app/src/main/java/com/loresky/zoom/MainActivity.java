@@ -15,6 +15,7 @@ import com.loresky.zoom.test.broadcastReceiver.RececiverActivity;
 import com.loresky.zoom.test.dialogfragment.MyDialogFragment;
 import com.loresky.zoom.test.fragment.CrimeActivity;
 import com.loresky.zoom.test.fragment.CrimeListActivity;
+import com.loresky.zoom.test.glide.GlideActivity;
 import com.loresky.zoom.test.httpclient.HttpGetActivity;
 import com.loresky.zoom.test.httpclient.HttpPostAcitvity;
 import com.loresky.zoom.test.iconfont.IconFontActivity;
@@ -31,15 +32,15 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
                     HttpGetActivity.class, HttpPostAcitvity.class,
                     RececiverActivity.class, GeenDaoActivity.class,
                     VolleyActivity.class, NotificationActivity.class,
-                    IconFontActivity.class};
+                    IconFontActivity.class, GlideActivity.class};
 
     private String[] mName = new String[]{
             "fragment", "listFragment",
-            "dialogFragment, asyncTask",
+            "dialogFragment", "asyncTask",
             "httpGet", "httpPost",
             "RececiverActivity", "GeenDao",
             "Volley", "Notification",
-            "inco font"
+            "inco font","glide图片加载"
     };
 
     @Override
