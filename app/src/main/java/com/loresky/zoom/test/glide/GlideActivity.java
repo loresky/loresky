@@ -13,7 +13,7 @@ import com.loresky.zoom.common.BaseActivity;
 /**
  * Created by cy on 15-4-23.
  */
-public class GlideActivity extends BaseActivity implements OnClickListener {
+public class GlideActivity extends BaseActivity {
     private ButtonRectangle requestBtn;
     private ImageView mImage;
 
@@ -35,17 +35,7 @@ public class GlideActivity extends BaseActivity implements OnClickListener {
 
     @Override
     public void setListener() {
-        requestBtn.setOnClickListener(this);
-
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.request:
-                loadImage();
-                break;
-        }
+        requestBtn.setOnClickListener(v -> loadImage());
     }
 
     private void loadImage() {

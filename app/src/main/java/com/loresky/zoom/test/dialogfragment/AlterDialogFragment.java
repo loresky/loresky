@@ -23,12 +23,8 @@ public class AlterDialogFragment extends DialogFragment {
 
         View view = inflater.inflate(R.layout.fragmetn_dialog, container);
         Button btn = (Button) view.findViewById(R.id.id_sure_edit_name);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dismiss();
-            }
-        });
+
+        btn.setOnClickListener(v -> dismiss());
         return view;
     }
 }

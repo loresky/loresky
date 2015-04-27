@@ -13,7 +13,7 @@ import com.loresky.zoom.common.BaseActivity;
 /**
  * Created by Administrator on 2015/3/3.
  */
-public class DownAsyncActivity extends BaseActivity implements OnClickListener {
+public class DownAsyncActivity extends BaseActivity {
     private Button btn;
     private ProgressBar mProgressBar;
     private TextView mTitle;
@@ -37,19 +37,10 @@ public class DownAsyncActivity extends BaseActivity implements OnClickListener {
 
     @Override
     public void setListener() {
-        btn.setOnClickListener(this);
+        btn.setOnClickListener(v -> {
+            DownAsyncTask downAsync = new DownAsyncTask(mTitle, mProgressBar);
+            downAsync.execute(100);
+        });
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn:
-                DownAsyncTask downAsync = new DownAsyncTask(mTitle, mProgressBar);
-                downAsync.execute(100);
-                break;
-            default:
-
-                break;
-        }
-    }
 }

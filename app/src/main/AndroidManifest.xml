@@ -33,6 +33,7 @@
         <activity android:name=".test.notification.NotificationActivity"/>
         <activity android:name=".test.iconfont.IconFontActivity"/>
         <activity android:name=".test.glide.GlideActivity"/>
+        <activity android:name=".test.rxjava.RxJavaActivtiy"/>
     </application>
 
 </manifest>

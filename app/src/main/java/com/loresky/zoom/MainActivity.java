@@ -20,6 +20,7 @@ import com.loresky.zoom.test.httpclient.HttpGetActivity;
 import com.loresky.zoom.test.httpclient.HttpPostAcitvity;
 import com.loresky.zoom.test.iconfont.IconFontActivity;
 import com.loresky.zoom.test.notification.NotificationActivity;
+import com.loresky.zoom.test.rxjava.RxJavaActivtiy;
 import com.loresky.zoom.test.volley.VolleyActivity;
 import com.loresky.zoom.util.DebugLog;
 
@@ -32,7 +33,9 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
                     HttpGetActivity.class, HttpPostAcitvity.class,
                     RececiverActivity.class, GeenDaoActivity.class,
                     VolleyActivity.class, NotificationActivity.class,
-                    IconFontActivity.class, GlideActivity.class};
+                    IconFontActivity.class, GlideActivity.class,
+                    RxJavaActivtiy.class
+            };
 
     private String[] mName = new String[]{
             "fragment", "listFragment",
@@ -40,7 +43,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
             "httpGet", "httpPost",
             "RececiverActivity", "GeenDao",
             "Volley", "Notification",
-            "inco font","glide图片加载"
+            "inco font", "glide图片加载",
+            "RxJavaActivtiy"
     };
 
     @Override
