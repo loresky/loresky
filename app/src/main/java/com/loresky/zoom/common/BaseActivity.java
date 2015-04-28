@@ -12,6 +12,27 @@ import com.loresky.zoom.util.ToastMessage;
 public abstract class BaseActivity extends FragmentActivity {
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        AppForegroundStateManager.getInstance().onActivityVisible(this);
+    }
+
+    @Override
+    protected void onStop() {
+        AppForegroundStateManager.getInstance().onActivityNotVisible(this);
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //Toast关闭提示
+        ToastMessage.closd();
+        //结束Activity&从堆栈中移除
+        AppManager.getAppManager().finishActivity(this);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //添加Activity到堆栈
@@ -42,12 +63,6 @@ public abstract class BaseActivity extends FragmentActivity {
      */
     public abstract void setListener();
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        //Toast关闭提示
-        ToastMessage.closd();
-        //结束Activity&从堆栈中移除
-        AppManager.getAppManager().finishActivity(this);
-    }
+
+
 }
