@@ -6,11 +6,11 @@ import android.content.Context;
 import java.util.Stack;
 
 /**
- * 应用程序Activity管理类：用于Activity管理和应用程序退出
- *
- * @author liux (http://my.oschina.net/liux)
- * @version 1.0
- * @created 2012-3-21
+ * @COMPANY: loresky
+ * @DESCRIPTION: 应用程序Activity管理类：用于Activity管理和应用程序退出
+ * @AUTHOR: cy
+ * @VERSION: v1.0.0
+ * @DATE: 2015-03-03
  */
 public class AppManager {
 
@@ -96,11 +96,11 @@ public class AppManager {
     public void AppExit(Context context) {
         try {
             finishAllActivity();
-//            ActivityManager activityMgr = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+            //            ActivityManager activityMgr = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
             //要加权限 <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
-//            activityMgr.killBackgroundProcesses(context.getPackageName());
-//            android.os.Process.killProcess(android.os.Process.myPid());
-//            System.exit(0);
+            //            activityMgr.killBackgroundProcesses(context.getPackageName());
+            //            android.os.Process.killProcess(android.os.Process.myPid());
+            //            System.exit(0);
         } catch (Exception e) {
         }
     }

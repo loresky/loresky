@@ -7,7 +7,11 @@ import android.support.v4.app.FragmentActivity;
 import com.loresky.zoom.util.ToastMessage;
 
 /**
- * Created by Administrator on 2015/2/27.
+ * @COMPANY: loresky
+ * @DESCRIPTION: 应用程序Activity基类
+ * @AUTHOR: cy
+ * @VERSION: v1.0.0
+ * @DATE: 2015-03-03
  */
 public abstract class BaseActivity extends FragmentActivity {
 
@@ -62,7 +66,6 @@ public abstract class BaseActivity extends FragmentActivity {
      * 设置事件监听事件
      */
     public abstract void setListener();
-
 
 
 }

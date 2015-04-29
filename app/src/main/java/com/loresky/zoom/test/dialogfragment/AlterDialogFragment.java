@@ -11,7 +11,11 @@ import android.widget.Button;
 import com.loresky.zoom.R;
 
 /**
- * Created by Administrator on 2015/3/2.
+ * @COMPANY: loresky
+ * @DESCRIPTION: AlterDialogFragment
+ * @AUTHOR: cy
+ * @VERSION: v1.0.0
+ * @DATE: 2015-03-02
  */
 public class AlterDialogFragment extends DialogFragment {
 

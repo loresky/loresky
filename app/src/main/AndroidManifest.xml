@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.loresky.zoom" >
+          package="com.loresky.zoom">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -9,14 +9,14 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme.Dark" >
+        android:theme="@style/AppTheme.Dark">
         <activity
             android:name=".SplashActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
@@ -34,6 +34,7 @@
         <activity android:name=".test.iconfont.IconFontActivity"/>
         <activity android:name=".test.glide.GlideActivity"/>
         <activity android:name=".test.rxjava.RxJavaActivtiy"/>
+        <activity android:name=".test.photoview.PhotoViewAcitvity"/>
     </application>
 
 </manifest>

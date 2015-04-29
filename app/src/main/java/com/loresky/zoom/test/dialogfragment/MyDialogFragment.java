@@ -1,13 +1,14 @@
 package com.loresky.zoom.test.dialogfragment;
 
-import android.app.Activity;
-import android.os.Bundle;
-
 import com.loresky.zoom.R;
 import com.loresky.zoom.common.BaseActivity;
 
 /**
- * Created by Administrator on 2015/3/2.
+ * @COMPANY: loresky
+ * @DESCRIPTION: DialogFragment
+ * @AUTHOR: cy
+ * @VERSION: v1.0.0
+ * @DATE: 2015-03-02
  */
 public class MyDialogFragment extends BaseActivity {
 

@@ -10,7 +10,11 @@ import android.widget.LinearLayout;
 import com.loresky.zoom.common.BaseActivity;
 
 /**
- * Created by Administrator on 2015/3/4.
+ * @COMPANY: loresky
+ * @DESCRIPTION: Rececive广播
+ * @AUTHOR: cy
+ * @VERSION: v1.0.0
+ * @DATE: 2015-03-04
  */
 public class RececiverActivity extends BaseActivity implements View.OnClickListener {
     private Button mBtn;

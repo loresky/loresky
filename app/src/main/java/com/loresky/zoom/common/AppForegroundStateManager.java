@@ -16,11 +16,12 @@ import java.util.Set;
 
 /**
  * https://github.com/bboyfeiyu/android-tech-frontier/blob/master/issue-8/%E6%A3%80%E6%B5%8BAndroid%E5%BA%94%E7%94%A8%E7%9A%84%E5%90%AF%E5%8A%A8%E4%B8%8E%E5%85%B3%E9%97%AD.md
- * 这个类用于追踪当前所有启动的Activity，使得我们能判断应用是否在后台运行
  *
- * @author cy
- * @version 1.0
- * @created 2015-4-28
+ * @COMPANY: loresky
+ * @DESCRIPTION: 这个类用于追踪当前所有启动的Activity，使得我们能判断应用是否在后台运行
+ * @AUTHOR: cy
+ * @VERSION: v1.0.0
+ * @DATE: 2015-04-28
  */
 public class AppForegroundStateManager {
     private static final String TAG = AppForegroundStateManager.class.getSimpleName();

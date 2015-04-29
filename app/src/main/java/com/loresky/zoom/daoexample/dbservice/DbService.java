@@ -9,11 +9,14 @@ import com.loresky.zoom.daoexample.Note;
 import com.loresky.zoom.daoexample.NoteDao;
 import com.loresky.zoom.util.DebugLog;
 
-
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/3/7.
+ * @COMPANY: loresky
+ * @DESCRIPTION: greendao增删查改
+ * @AUTHOR: cy
+ * @VERSION: v1.0.0
+ * @DATE: 2015-03-17
  */
 public class DbService {
     private static final String TAG = DbService.class.getSimpleName();

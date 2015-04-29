@@ -1,7 +1,11 @@
 package com.loresky.zoom.common;
 
 /**
- * Created by Administrator on 2015/3/3.
+ * @COMPANY: loresky
+ * @DESCRIPTION: 应用程序Activity基类
+ * @AUTHOR: cy
+ * @VERSION: v1.0.0
+ * @DATE: 2015-03-03
  */
 public class Constants {
     public static final String DB_NAME = "genndao.db";

@@ -1,9 +1,6 @@
 package com.loresky.zoom.test.asynctask;
 
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -11,7 +8,11 @@ import com.loresky.zoom.R;
 import com.loresky.zoom.common.BaseActivity;
 
 /**
- * Created by Administrator on 2015/3/3.
+ * @COMPANY: loresky
+ * @DESCRIPTION: AsyncTask的Activity
+ * @AUTHOR: cy
+ * @VERSION: v1.0.0
+ * @DATE: 2015-03-03
  */
 public class DownAsyncActivity extends BaseActivity {
     private Button btn;

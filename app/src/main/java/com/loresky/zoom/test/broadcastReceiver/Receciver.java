@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 /**
- * Created by Administrator on 2015/3/4.
+ * @COMPANY: loresky
+ * @DESCRIPTION: 接收广播
+ * @AUTHOR: cy
+ * @VERSION: v1.0.0
+ * @DATE: 2015-03-04
  */
 public class Receciver extends BroadcastReceiver {
     @Override
