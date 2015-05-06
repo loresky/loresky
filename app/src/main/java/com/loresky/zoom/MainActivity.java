@@ -21,6 +21,7 @@ import com.loresky.zoom.test.httpclient.HttpGetActivity;
 import com.loresky.zoom.test.httpclient.HttpPostAcitvity;
 import com.loresky.zoom.test.iconfont.IconFontActivity;
 import com.loresky.zoom.test.notification.NotificationActivity;
+import com.loresky.zoom.test.parcelable.ParcelableActivity;
 import com.loresky.zoom.test.photoview.PhotoViewAcitvity;
 import com.loresky.zoom.test.rxjava.RxJavaActivtiy;
 import com.loresky.zoom.test.volley.VolleyActivity;
@@ -37,7 +38,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
                     VolleyActivity.class, NotificationActivity.class,
                     IconFontActivity.class, GlideActivity.class,
                     RxJavaActivtiy.class, PhotoViewAcitvity.class,
-                    RecyclerSwipeActivity.class
+                    RecyclerSwipeActivity.class, ParcelableActivity.class
             };
 
     private String[] mName = new String[]{
@@ -47,8 +48,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
             "RececiverActivity", "GeenDao",
             "Volley", "Notification",
             "inco font", "glide图片加载",
-            "RxJavaActivtiy", "PhotoView",
-            "Recycler SwipeRefres"
+            "RxJavaActivtiy", "PhotoView图片缩放",
+            "Recycler SwipeRefres官方最新下拉、替换LsitView", "Parcelable跳转传值"
     };
 
     @Override

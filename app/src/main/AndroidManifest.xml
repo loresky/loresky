@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
+    <!-- android:allowBackup="true"允许备份文件-->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -36,6 +38,8 @@
         <activity android:name=".test.rxjava.RxJavaActivtiy"/>
         <activity android:name=".test.photoview.PhotoViewAcitvity"/>
         <activity android:name=".test.RecyclerSwipeRefresh.RecyclerSwipeActivity"/>
+        <activity android:name=".test.parcelable.ParcelableActivity"/>
+        <activity android:name=".test.parcelable.AcceptAcitvity"/>
     </application>
 
 </manifest>
