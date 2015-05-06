@@ -35,6 +35,7 @@
         <activity android:name=".test.glide.GlideActivity"/>
         <activity android:name=".test.rxjava.RxJavaActivtiy"/>
         <activity android:name=".test.photoview.PhotoViewAcitvity"/>
+        <activity android:name=".test.RecyclerSwipeRefresh.RecyclerSwipeActivity"/>
     </application>
 
 </manifest>

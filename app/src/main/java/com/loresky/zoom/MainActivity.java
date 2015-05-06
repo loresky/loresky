@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.loresky.zoom.common.BaseActivity;
 import com.loresky.zoom.daoexample.GeenDaoActivity;
+import com.loresky.zoom.test.RecyclerSwipeRefresh.RecyclerSwipeActivity;
 import com.loresky.zoom.test.asynctask.DownAsyncActivity;
 import com.loresky.zoom.test.broadcastReceiver.RececiverActivity;
 import com.loresky.zoom.test.dialogfragment.MyDialogFragment;
@@ -35,7 +36,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
                     RececiverActivity.class, GeenDaoActivity.class,
                     VolleyActivity.class, NotificationActivity.class,
                     IconFontActivity.class, GlideActivity.class,
-                    RxJavaActivtiy.class, PhotoViewAcitvity.class
+                    RxJavaActivtiy.class, PhotoViewAcitvity.class,
+                    RecyclerSwipeActivity.class
             };
 
     private String[] mName = new String[]{
@@ -45,7 +47,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
             "RececiverActivity", "GeenDao",
             "Volley", "Notification",
             "inco font", "glide图片加载",
-            "RxJavaActivtiy", "PhotoView"
+            "RxJavaActivtiy", "PhotoView",
+            "Recycler SwipeRefres"
     };
 
     @Override
