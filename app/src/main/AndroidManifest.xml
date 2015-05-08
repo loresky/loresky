@@ -40,6 +40,13 @@
         <activity android:name=".test.RecyclerSwipeRefresh.RecyclerSwipeActivity"/>
         <activity android:name=".test.parcelable.ParcelableActivity"/>
         <activity android:name=".test.parcelable.AcceptAcitvity"/>
+        <activity android:name=".test.MyService.MyServiceActivity"/>
+
+        <service android:name=".test.MyService.MyService">
+            <intent-filter>
+                <action android:name=".test.MyService.MyService"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

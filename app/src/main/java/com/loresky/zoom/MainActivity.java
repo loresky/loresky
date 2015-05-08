@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.loresky.zoom.common.BaseActivity;
 import com.loresky.zoom.daoexample.GeenDaoActivity;
+import com.loresky.zoom.test.MyService.MyServiceActivity;
 import com.loresky.zoom.test.RecyclerSwipeRefresh.RecyclerSwipeActivity;
 import com.loresky.zoom.test.asynctask.DownAsyncActivity;
 import com.loresky.zoom.test.broadcastReceiver.RececiverActivity;
@@ -38,7 +39,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
                     VolleyActivity.class, NotificationActivity.class,
                     IconFontActivity.class, GlideActivity.class,
                     RxJavaActivtiy.class, PhotoViewAcitvity.class,
-                    RecyclerSwipeActivity.class, ParcelableActivity.class
+                    RecyclerSwipeActivity.class, ParcelableActivity.class,
+                    MyServiceActivity.class
             };
 
     private String[] mName = new String[]{
@@ -49,7 +51,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
             "Volley", "Notification",
             "inco font", "glide图片加载",
             "RxJavaActivtiy", "PhotoView图片缩放",
-            "Recycler SwipeRefres官方最新下拉、替换LsitView", "Parcelable跳转传值"
+            "Recycler SwipeRefres官方最新下拉、替换LsitView", "Parcelable跳转传值",
+            "Service"
     };
 
     @Override
