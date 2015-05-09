@@ -1,0 +1,66 @@
+package geendao;
+
+import de.greenrobot.daogenerator.DaoGenerator;
+import de.greenrobot.daogenerator.Entity;
+import de.greenrobot.daogenerator.Property;
+import de.greenrobot.daogenerator.Schema;
+import de.greenrobot.daogenerator.ToMany;
+
+/**
+ * @Company: guangpai
+ * @Title: ExampleDaoGenerator.java
+ * @Description: 通过DaoExampleGenerator工程再次生成Note和NoteDao。
+ *               使用DaoMaster类可以获得一个方便的SQLiteOpenHelper: new
+ *               DaoMaster.DevOpenHelper(this, "notes-db", null) 你不必编写“CREATE
+ *               TABLE” SQL语句，greenDao会为你完成
+ * @author: chenyong
+ * @date: 2015年3月4日
+ * @version: 1.0
+ */
+
+public class ExampleDaoGenerator
+{
+    public static void main(String[] args) throws Exception
+    {
+        // 该方法第一个参数用来更新数据库版本号，第二个参数为要生成的DAO类所在包路径
+        Schema schema = new Schema( 3, "de.greenrobot.daoexample");
+
+        // 进行建表和设置要生成DAO文件的目标工程的项目路径
+        addNote(schema);
+        addCustomerOrder(schema);
+        // "../demo/src/geendao/" 这个是把生成的文件放在哪个目录下(目录是要手成创建)
+        new DaoGenerator().generateAll(schema, "../demo/src/geendao/");
+    }
+
+    private static void addNote(Schema schema)
+    {
+        // 创建一个实体类
+        Entity note = schema.addEntity("Note");
+
+        // 设置一个自增长ID列为主键 note.addIdProperty().primaryKey().autoincrement();
+        note.addIdProperty();
+        // 非null字段
+        note.addStringProperty("text").notNull();
+        note.addStringProperty("comment");
+        note.addDateProperty("date");
+    }
+
+    private static void addCustomerOrder(Schema schema)
+    {
+        Entity customer = schema.addEntity("Customer");
+        customer.addIdProperty();
+        customer.addStringProperty("name").notNull();
+
+        Entity order = schema.addEntity("Order");
+        //默认表名就是类名，也可以自定义表名
+        order.setTableName("ORDERS"); // "ORDER" is a reserved keyword
+        order.addIdProperty();
+        Property orderDate = order.addDateProperty("date").getProperty();
+        Property customerId = order.addLongProperty("customerId").notNull().getProperty();
+        order.addToOne(customer, customerId);
+
+        ToMany customerToOrders = customer.addToMany(order, customerId);
+        customerToOrders.setName("orders");
+        customerToOrders.orderAsc(orderDate);
+    }
+}
