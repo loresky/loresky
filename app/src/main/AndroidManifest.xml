@@ -47,6 +47,11 @@
                 <action android:name=".test.MyService.MyService"/>
             </intent-filter>
         </service>
+
+        <!-- Glide设置-->
+        <meta-data
+            android:name="com.loresky.zoom.test.glide.MyGlideModule"
+            android:value="GlideModule"/>
     </application>
 
 </manifest>
